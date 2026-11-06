@@ -2,6 +2,8 @@
 
 A minimal 3D scene built with [Three.js](https://threejs.org/) and [Vite](https://vite.dev/): a rotating purple cube, displayed fullscreen, that you can view from any angle with your mouse.
 
+![The cube rotating while the camera orbits around it](docs/demo.gif)
+
 ## Getting started
 
 This project uses [pnpm](https://pnpm.io/). Install the dependencies, then start the development server:
@@ -32,6 +34,7 @@ pnpm preview  # Serve the production build locally
 ## Project structure
 
 ```text
+├── docs/            # Demo GIF shown in this README
 ├── index.html       # Page entry point
 ├── public/          # Static files served from the root (favicon)
 └── src/
