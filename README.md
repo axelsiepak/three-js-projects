@@ -1,46 +1,44 @@
-# Three.js Simple Projet
+# Simple Three.js Project
 
-Une scène 3D minimale réalisée avec [Three.js](https://threejs.org/) et [Vite] : un cube violet en rotation, affiché en plein écran, que l'on peut observer sous tous les angles à la souris.
+A minimal 3D scene built with [Three.js](https://threejs.org/) and [Vite](https://vite.dev/): a rotating purple cube, displayed fullscreen, that you can view from any angle with your mouse.
 
-[Vite]: https://vite.dev/
+## Getting started
 
-## Démarrage
-
-Le projet utilise [pnpm](https://pnpm.io/). Installez les dépendances, puis lancez le serveur de développement :
+This project uses [pnpm](https://pnpm.io/). Install the dependencies, then start the development server:
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-Ouvrez ensuite l'adresse affichée dans le terminal.
+Then open the address shown in your terminal.
 
-## Commandes
+## Commands
 
-| Commande | Description |
-| --- | --- |
-| `pnpm dev` | Lance le serveur de développement |
-| `pnpm build` | Génère le build de production dans `dist/` |
-| `pnpm preview` | Sert le build de production en local |
-
-## Contrôles
-
-| Effet | Souris | Tactile |
-| --- | --- | --- |
-| Tourner autour du cube | Clic gauche + glisser | Glisser un doigt |
-| Zoomer ou dézoomer | Molette | Pincer avec deux doigts |
-| Déplacer la vue | Clic droit + glisser | Glisser deux doigts |
-
-## Structure
-
-```text
-├── index.html       # Point d'entrée de la page
-├── public/          # Fichiers statiques servis à la racine (favicon)
-└── src/
-    ├── main.js      # Scène, caméra, lumières, contrôles et animation
-    └── style.css    # Styles de la page, importés par main.js
+```bash
+pnpm dev      # Start the development server
+pnpm build    # Build for production into dist/
+pnpm preview  # Serve the production build locally
 ```
 
-## Licence
+## Controls
 
-Ce projet est distribué sous licence [ISC](LICENSE).
+| Action | Mouse | Touch |
+| --- | --- | --- |
+| Orbit around the cube | Left-click + drag | Drag with one finger |
+| Zoom in or out | Scroll wheel | Pinch with two fingers |
+| Pan the view | Right-click + drag | Drag with two fingers |
+
+## Project structure
+
+```text
+├── index.html       # Page entry point
+├── public/          # Static files served from the root (favicon)
+└── src/
+    ├── main.js      # Scene, camera, lights, controls and animation
+    └── style.css    # Page styles, imported by main.js
+```
+
+## License
+
+This project is licensed under the [ISC License](LICENSE).
