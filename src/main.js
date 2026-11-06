@@ -54,17 +54,20 @@ const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
 // 9. AnimationLoop
-function animate() {
-	requestAnimationFrame(animate);
+let previousTime = performance.now();
 
-	cube.rotation.x += 0.005;
-	cube.rotation.y += 0.01;
+function animate(time) {
+	const delta = (time - previousTime) / 1000;
+	previousTime = time;
+
+	cube.rotation.x += 0.3 * delta;
+	cube.rotation.y += 0.6 * delta;
 
 	controls.update();
 	renderer.render(scene, camera);
 }
 
-animate();
+renderer.setAnimationLoop(animate);
 
 // 10. Handle browser resizing
 window.addEventListener('resize', () => {
