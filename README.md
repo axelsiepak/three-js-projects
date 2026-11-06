@@ -28,18 +28,6 @@ pnpm build    # Build the home page and every project into dist/
 pnpm preview  # Serve the production build locally
 ```
 
-## Adding a project
-
-Copy an existing project, then change the `<title>` in its `index.html`:
-
-```bash
-cp -r projects/rotating-cube projects/my-project
-```
-
-The folder name becomes the project's URL and the `<title>` is its name on the home page. Any folder in `projects/` with an `index.html` is picked up automatically.
-
-The home page also shows the project's `demo.gif` if it has one, so replace or delete the copied GIF.
-
 ## Project structure
 
 ```text
