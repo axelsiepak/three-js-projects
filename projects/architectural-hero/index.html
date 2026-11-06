@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Architectural Hero</title>
+		<meta name="description" content="A cinematic 3D hero section showing a fictional house as the sun goes down.">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+	</head>
+	<body>
+		<div class="overlay">
+			<header class="bar bar--top">
+				<span class="brand">Solstice House</span>
+				<span class="note">A fictional residence</span>
+			</header>
+
+			<section class="hero" id="hero" aria-labelledby="hero-title">
+				<p class="eyebrow">Three volumes, one horizon</p>
+				<h1 id="hero-title">Built for the last&nbsp;light.</h1>
+				<p class="lede">Concrete, cedar and glass, cantilevered over a still pool. Watch the house wake up as the sun goes down.</p>
+				<div class="actions">
+					<button class="button button--primary" id="explore" type="button">Explore the house</button>
+					<button class="button" id="pause" type="button">Pause</button>
+				</div>
+			</section>
+
+			<div class="explore-panel" id="explore-panel" inert>
+				<p>Drag to orbit, scroll to zoom, or use the arrow keys.</p>
+				<button class="button button--primary" id="back-to-film" type="button">Back to the film</button>
+			</div>
+
+			<nav class="bar bar--bottom" id="chapters" aria-label="Film chapters">
+				<button class="chapter" data-shot="0" type="button"><span>Approach</span><i></i></button>
+				<button class="chapter" data-shot="1" type="button"><span>Cantilever</span><i></i></button>
+				<button class="chapter" data-shot="2" type="button"><span>Mirror</span><i></i></button>
+				<button class="chapter" data-shot="3" type="button"><span>Last light</span><i></i></button>
+			</nav>
+		</div>
+
+		<script type="module" src="./src/main.js"></script>
+	</body>
+</html>

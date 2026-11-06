@@ -6,6 +6,7 @@ A library of small 3D projects built with [Three.js](https://threejs.org/) and [
 
 | Demo | Project | Description |
 | --- | --- | --- |
+| <img src="projects/architectural-hero/demo.gif" alt="The camera moving around a modern concrete house as the sun sets and its rooms light up" width="240"> | [Architectural Hero](projects/architectural-hero/) | A cinematic hero section filming a house as the sun goes down |
 | <img src="projects/particle-galaxy/demo.gif" alt="A spiral galaxy slowly rotating around its bright core" width="240"> | [Particle Galaxy](projects/particle-galaxy/) | A spiral galaxy made of 60,000 particles |
 | <img src="projects/rotating-cube/demo.gif" alt="The cube rotating while the camera orbits around it" width="240"> | [Rotating Cube](projects/rotating-cube/) | A rotating purple cube you can view from any angle |
 
