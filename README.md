@@ -6,6 +6,7 @@ A library of small 3D projects built with [Three.js](https://threejs.org/) and [
 
 | Demo | Project | Description |
 | --- | --- | --- |
+| <img src="projects/jelly-watermelon/demo.gif" alt="A jelly watermelon slice wobbling as a knife cuts it into pieces" width="240"> | [Jelly Watermelon](projects/jelly-watermelon/) | A wobbly jelly watermelon slice you can cut with a knife |
 | <img src="projects/particle-galaxy/demo.gif" alt="A spiral galaxy slowly rotating around its bright core" width="240"> | [Particle Galaxy](projects/particle-galaxy/) | A spiral galaxy made of 60,000 particles |
 | <img src="projects/rotating-cube/demo.gif" alt="The cube rotating while the camera orbits around it" width="240"> | [Rotating Cube](projects/rotating-cube/) | A rotating purple cube you can view from any angle |
 
