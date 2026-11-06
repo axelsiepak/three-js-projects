@@ -42,6 +42,8 @@ pnpm preview  # Serve the production build locally
         └── src/         # Project code and styles
 ```
 
+Any folder in `projects/` with an `index.html` is detected automatically by `vite.config.js`.
+
 ## License
 
 This project is licensed under the [ISC License](LICENSE).
