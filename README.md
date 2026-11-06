@@ -2,7 +2,9 @@
 
 A minimal 3D scene built with [Three.js](https://threejs.org/) and [Vite](https://vite.dev/): a rotating purple cube, displayed fullscreen, that you can view from any angle with your mouse.
 
-![The cube rotating while the camera orbits around it](docs/demo.gif)
+<p align="center">
+	<img src="docs/demo.gif" alt="The cube rotating while the camera orbits around it">
+</p>
 
 ## Getting started
 
