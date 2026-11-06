@@ -23,11 +23,11 @@ pnpm preview  # Serve the production build locally
 
 ## Controls
 
-| Action | Mouse | Touch |
-| --- | --- | --- |
-| Orbit around the cube | Left-click + drag | Drag with one finger |
-| Zoom in or out | Scroll wheel | Pinch with two fingers |
-| Pan the view | Right-click + drag | Drag with two fingers |
+| Action | Mouse | Touch | Keyboard |
+| --- | --- | --- | --- |
+| Orbit around the cube | Left-click + drag | Drag with one finger | Arrow keys |
+| Zoom in or out | Scroll wheel | Pinch with two fingers | – |
+| Pan the view | Right-click + drag | Drag with two fingers | – |
 
 ## Project structure
 

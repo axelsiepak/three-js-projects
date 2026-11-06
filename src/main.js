@@ -53,6 +53,38 @@ scene.add(directionalLight);
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
+const KEY_ROTATE_SPEED = 1.5; // radians per second
+const pressedKeys = new Set();
+const offset = new THREE.Vector3();
+const spherical = new THREE.Spherical();
+
+window.addEventListener('keydown', (event) => {
+	if (event.altKey || event.ctrlKey || event.metaKey) return;
+
+	if (event.key.startsWith('Arrow')) {
+		event.preventDefault();
+		pressedKeys.add(event.key);
+	}
+});
+
+window.addEventListener('keyup', (event) => pressedKeys.delete(event.key));
+window.addEventListener('blur', () => pressedKeys.clear());
+
+function updateKeyboardControls(delta) {
+	const horizontal = pressedKeys.has('ArrowRight') - pressedKeys.has('ArrowLeft');
+	const vertical = pressedKeys.has('ArrowUp') - pressedKeys.has('ArrowDown');
+
+	if (horizontal === 0 && vertical === 0) return;
+
+	offset.copy(camera.position).sub(controls.target);
+	spherical.setFromVector3(offset);
+	spherical.theta += horizontal * KEY_ROTATE_SPEED * delta;
+	spherical.phi -= vertical * KEY_ROTATE_SPEED * delta;
+	spherical.makeSafe();
+
+	camera.position.copy(controls.target).add(offset.setFromSpherical(spherical));
+}
+
 // 9. AnimationLoop
 let previousTime = performance.now();
 
@@ -63,6 +95,7 @@ function animate(time) {
 	cube.rotation.x += 0.3 * delta;
 	cube.rotation.y += 0.6 * delta;
 
+	updateKeyboardControls(delta);
 	controls.update();
 	renderer.render(scene, camera);
 }
